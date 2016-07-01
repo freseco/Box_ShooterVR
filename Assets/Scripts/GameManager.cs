@@ -26,11 +26,13 @@ public class GameManager : MonoBehaviour {
 
 	public bool gameIsOver = false;
 
+	#region Level
 	public GameObject playAgainButtons;
 	public string playAgainLevelToLoad;
 
 	public GameObject nextLevelButtons;
 	public string nextLevelToLoad;
+	#endregion
 
 	private float currentTime;
 
