@@ -14,8 +14,19 @@ public class StartGame : MonoBehaviour {
 	
 	}
 
-	// Update is called once per frame
-	void Update () {
+    public void StartLevelFantasy()
+    {
+        SceneManager.LoadScene("Fantasy");
+
+    }
+    public void StartLevelworld()
+    {
+        SceneManager.LoadScene("WORLD");
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 	
 	}
 }

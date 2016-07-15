@@ -43,13 +43,22 @@ public class TargetExit2 : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // respond on collisions
+    /// <summary>
+    ///  respond on collisions
+    /// </summary>
+    /// <param name="newCollision">GameObject collisions with it</param>
     void OnCollisionEnter(Collision newCollision)
     {
         // only do stuff if hit by a projectile
         if (newCollision.gameObject.tag == "Projectile")
         {
-            Destroy(newCollision.gameObject);
+            //don't destroy after death
+            if (shooting != 0)
+            {
+                Destroy(newCollision.gameObject);
+            }
+            
+
             shooting--;
 
             if (shooting==0)

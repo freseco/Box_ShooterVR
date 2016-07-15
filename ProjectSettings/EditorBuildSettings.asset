@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/Level4.unity
   - enabled: 1
     path: Assets/_Scenes/Fantasy.unity
+  - enabled: 1
+    path: Assets/Jurassic Pack/-Demo/WORLD.unity
