@@ -1,13 +1,11 @@
 ﻿// GUI Animator FREE
-// Version: 1.0.1
-// Unity 4.7.1 or higher and Unity 5.3.4 or higher compatilble, see more info in Readme.txt file.
+// Version: 1.1.5
+// Compatilble: Unity 5.5.1 or higher, see more info in Readme.txt file.
 //
-// Author:				Gold Experience Team (http://www.ge-team.com)
+// Developer:							Gold Experience Team (https://www.assetstore.unity3d.com/en/#!/search/page=1/sortby=popularity/query=publisher:4162)
 //
 // Unity Asset Store:					https://www.assetstore.unity3d.com/en/#!/content/58843
-// GE Store:							http://www.ge-team.com/store/en/products/gui-animator-free/
-// Full version on Unity Asset Store:	https://www.assetstore.unity3d.com/en/#!/content/28709
-// Full version on GE Store:			http://www.ge-team.com/store/en/products/gui-animator-for-unity-ui/
+// See Full version:					https://www.assetstore.unity3d.com/en/#!/content/28709
 //
 // Please direct any bugs/comments/suggestions to geteamdev@gmail.com
 
@@ -15,7 +13,7 @@
 
 using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;  // Unity 5.3 or higher, see http://docs.unity3d.com/Manual/UpgradeGuide53.html and http://docs.unity3d.com/530/Documentation/ScriptReference/SceneManagement.SceneManager.html
+using UnityEngine.SceneManagement;
 
 #endregion // Namespaces
 

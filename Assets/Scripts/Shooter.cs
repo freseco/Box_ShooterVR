@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.VR;
 
@@ -8,6 +8,8 @@ public class Shooter : MonoBehaviour {
 	public GameObject projectile;
 	public float power = 10.0f;
 	public GameObject FollowObjet;
+    public Transform postionfire;
+    public GameObject Fire;
 	
 	// Reference to AudioClip to play
 	public AudioClip shootSFX;
@@ -20,25 +22,37 @@ public class Shooter : MonoBehaviour {
 			// if projectile is specified
 			if (projectile)
 			{
-				// Instantiante projectile at the camera + 1 meter forward with camera rotation
+				// Instantiante projectile 
 				GameObject newProjectile = Instantiate(projectile,
-														FollowObjet.transform.position + FollowObjet.transform.forward, 
-														FollowObjet.transform.rotation) as GameObject;
-				
+														FollowObjet.transform.position + FollowObjet.transform.forward,
+                                                        FollowObjet.transform.rotation) as GameObject;
+
+                GameObject fire = Instantiate(Fire, postionfire.position,
+                                                        postionfire.rotation) as GameObject;
 
 
 
+                Fire.transform.parent=(transform);
 
-				// if the projectile does not have a rigidbody component, add one
-				if (!newProjectile.GetComponent<Rigidbody>()) 
+                // Destroy the bullet after 2 seconds
+                Destroy(fire, 2.0f);
+
+
+                // if the projectile does not have a rigidbody component, add one
+                if (!newProjectile.GetComponent<Rigidbody>()) 
 				{
 					newProjectile.AddComponent<Rigidbody>();
 				}
-				// Apply force to the newProjectile's Rigidbody component if it has one
-				newProjectile.GetComponent<Rigidbody>().AddForce(transform.forward * power, ForceMode.VelocityChange);
 				
-				// play sound effect if set
-				if (shootSFX)
+                // Apply force to the newProjectile's Rigidbody component if it has one
+				//newProjectile.GetComponent<Rigidbody>().AddForce(FollowObjet.transform.forward * power, ForceMode.VelocityChange);
+                // Add velocity to the bullet
+                newProjectile.GetComponent<Rigidbody>().velocity = newProjectile.transform.forward * power;
+
+
+
+                // play sound effect if set
+                if (shootSFX)
 				{
 					if (newProjectile.GetComponent<AudioSource> ()) { // the projectile has an AudioSource component
 						// play the sound clip through the AudioSource component on the gameobject.

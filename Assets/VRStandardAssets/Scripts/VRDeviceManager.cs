@@ -59,7 +59,7 @@ namespace VRStandardAssets.Utils
 		    VRSettings.loadedDevice = VRDeviceType.Morpheus;
 #endif
 
-            VRSettings.enabled = true;
+            UnityEngine.XR.XRSettings.enabled = true;
         }
     }
 }

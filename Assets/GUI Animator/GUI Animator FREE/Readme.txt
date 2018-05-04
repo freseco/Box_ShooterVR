@@ -1,31 +1,28 @@
 ------------------------------------------------------------------
-GUI Animator FREE 1.0.1
+GUI Animator FREE 1.1.5
 ------------------------------------------------------------------
 
-	GUI Animator FREE lets you quickly add tween animations to Unity UI elements.
-
-	See full version (https://www.assetstore.unity3d.com/en/#!/content/28709).
+	GUI Animator FREE lets you add tween animations to Unity UI elements.
 
 	Features:
 
-		• 9 Demo scenes with sample scripts for C# developers.
-		• 9 Demo scenes with sample scripts for JavaScript developers.
-		• 2 Basic demo scenes with sample scripts for C# developers.
-		• Animate position, rotation, scale, fade using tweener.
-		• In, Idle and Out animations.
-		• Able to play sounds along with UI animations.
+		• 9 Demo scenes for C# developers.
+		• 9 Demo scenes for JavaScript developers.
+		• 2 Basic demo scenes for C# developers.
+		• Position, rotation, scale, fade animations with tweener.
+		• Categorized In, Idle and Out animations.
+		• Able to add and play sounds along with UI animations.
 		• Ignorable time scale.
-		
-		• Support Unity UI. (http://unity3d.com/learn/tutorials/modules/beginner/ui)
-		• Support all Canvas Render Modes.
-		• Support all UI Scale Modes.
+
+		• Supports Unity UI. (http://unity3d.com/learn/tutorials/modules/beginner/ui)
+		• Supports all Canvas Render Modes.
+		• Supports all UI Scale Modes.
 
 		• Support all build player platforms.
-		
+
 	Compatible:
-	
-		• Unity 4.7.1 or higher.
-		• Unity 5.3.4 or higher.
+
+		• Unity 5.5.1 or higher.
 
 	Note:
 
@@ -33,28 +30,51 @@ GUI Animator FREE 1.0.1
 
 	Product Pages:
 
-		Unity Asset Store:	https://www.assetstore.unity3d.com/en/#!/content/58843
-
-		GE Store:	http://www.ge-team.com/store/en/products/gui-animator-free/
+		https://www.assetstore.unity3d.com/en/#!/content/58843
 
 	Full version:
 
-		Unity Asset Store:	https://www.assetstore.unity3d.com/en/#!/content/28709
+		https://www.assetstore.unity3d.com/en/#!/content/28709
 
-		GE Store:	http://www.ge-team.com/store/en/products/gui-animator-for-unity-ui/
+	Advance features in full version:
 
+		• Callbacks.
+		• No message in Play mode.
+		• Compatible with many Tweeners; DOTween, HOTween, LeanTween, iTween.
+		• Able to add your favorite tweeners.
+		• Rotate, Scale and Fade loops in Idle-animations.
+		• Friendly Inspector that categorize In/Idle/Out animations into tabs.
+		• Better performance.
 
-	Please direct any bugs/comments/suggestions to support e-mail (geteamdev@gmail.com).
-		
+	Please direct any bugs/comments/suggestions to geteamdev@gmail.com.
+
 	Thank you for your support,
 
 	Gold Experience Team
 	E-mail: geteamdev@gmail.com
-	Website: http://www.ge-team.com
+	Website: https://www.ge-team.com
+
+------------------------------------------------------------------
+Easing type references
+------------------------------------------------------------------
+	
+	• Easings.net
+		http://easings.net
+
+	• RobertPenner.com
+		http://www.robertpenner.com/easing/easing_demo.html
 
 ------------------------------------------------------------------
 Release notes
 ------------------------------------------------------------------
+
+	Version 1.1.5
+	
+		• Unity 5.5.1 or higher compatible.
+
+	Version 1.1.0
+	
+		• Unity 5.4.0 or higher compatible.
 
 	Version 1.0.1 (Release on May 19, 2016)
 	
@@ -82,13 +102,3 @@ Release notes
 		• Supports all player platforms.
 		• Unity 4.6.9 or higher.
 		• Unity 5.3.2 or higher.
-
-------------------------------------------------------------------
-Easing type references
-------------------------------------------------------------------
-	
-	• Easings.net
-		http://easings.net
-
-	• RobertPenner.com
-		http://www.robertpenner.com/easing/easing_demo.html

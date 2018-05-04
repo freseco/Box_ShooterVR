@@ -114,13 +114,8 @@ public class OVRSceneSampleController : MonoBehaviour
         // Make sure to hide cursor 
         if (Application.isEditor == false)
         {
-#if UNITY_5
 			Cursor.visible = false; 
 			Cursor.lockState = CursorLockMode.Locked;
-#else
-            Screen.showCursor = false;
-            Screen.lockCursor = true;
-#endif
         }
 
         // CameraController updates
@@ -153,7 +148,7 @@ public class OVRSceneSampleController : MonoBehaviour
             Screen.fullScreen = !Screen.fullScreen;
 
         if (Input.GetKeyDown(KeyCode.M))
-			VR.VRSettings.showDeviceView = !VR.VRSettings.showDeviceView;
+			UnityEngine.XR.XRSettings.showDeviceView = !UnityEngine.XR.XRSettings.showDeviceView;
 
 #if !UNITY_ANDROID || UNITY_EDITOR
         // Escape Application

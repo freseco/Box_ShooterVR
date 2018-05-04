@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Controller : MonoBehaviour {
@@ -6,8 +6,9 @@ public class Controller : MonoBehaviour {
 	// public variables
 	public float moveSpeed = 3.0f;
 	public float gravity = 9.81f;
+    public float RotateSpeed = 40;
 
-	private CharacterController myController;
+    private CharacterController myController;
 
 	// Use this for initialization
 	void Start () {
@@ -19,21 +20,18 @@ public class Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// Determine how much should move in the z-direction
-		Vector3 movementZ = Input.GetAxis("Vertical") * Vector3.forward * moveSpeed * Time.deltaTime;
+        // Amount to Move
+       // float MoveForward = Input.GetAxis("Horizontal")*  moveSpeed *Time.deltaTime;
+        //float MoveRotate =  Input.GetAxis("Vertical")   * RotateSpeed* Time.deltaTime;
 
-		// Determine how much should move in the x-direction
-		Vector3 movementX = Input.GetAxis("Horizontal") * Vector3.right * moveSpeed * Time.deltaTime;
+        // Move the player
+        //myController.transform.Translate(Vector3.forward * MoveForward);
+        //myController.transform.Translate(-Vector3.forward * MoveRotate);
 
-		// Convert combined Vector3 from local space to world space based on the position of the current gameobject (player)
-		Vector3 movement = transform.TransformDirection(movementZ+movementX);
-		
-		// Apply gravity (so the object will fall if not grounded)
-		movement.y -= gravity * Time.deltaTime;
 
-		//Debug.Log ("Movement Vector = " + movement);
+        //transform.position -= myController.transform.right * (Input.GetAxis("Mouse X") * 0.03f);
+        //transform.position += myController.transform.forward * (Input.GetAxis("Mouse Y") * 0.03f);
+       // transform.eulerAngles.y -= (Input.GetAxis("Mouse X"));
 
-		// Actually move the character controller in the movement direction
-		myController.Move(movement);
-	}
+    }
 }

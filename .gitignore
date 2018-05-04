@@ -19,6 +19,9 @@ ExportedObj/
 *.booproj
 *.svd
 *.keystore
+*.tif
+*.disabled
+*.fbx
 
 
 # Unity3D generated meta files

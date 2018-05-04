@@ -1,11 +1,10 @@
 ------------------------------------------------------------------
-GUI Animator FREE 1.0.1
+GUI Animator FREE 1.1.5
 ------------------------------------------------------------------
 
-	• Web demo.
-		http://www.ge-team.com/store/en/products/gui-animator-free/
-
-	• Please direct any bugs/comments/suggestions to support e-mail (geteamdev@gmail.com).
+	• Available on Unity Asset Store, see https://www.assetstore.unity3d.com/en/#!/content/58843
+	• Full version, visit https://www.assetstore.unity3d.com/en/#!/content/28709
+	• Please direct any bugs/comments/suggestions to geteamdev@gmail.com.
 
 ------------------------------------------------------------------
 Use Demo Scenes
@@ -76,7 +75,7 @@ Use Demo Scenes
 Switch Tweeners
 ------------------------------------------------------------------
 
-	GUI Animator FREE does not contain this capability. See full version for more info (https://www.assetstore.unity3d.com/en/#!/content/28709).
+	GUI Animator FREE does not contain this capability but full version does, More info at https://www.assetstore.unity3d.com/en/#!/content/28709.
 
 ------------------------------------------------------------------
 Designer Workflow
@@ -745,12 +744,12 @@ Control GUI Animator via scripts
 				
 				- C#
 
-					// Set DontDestroyChildren to true to make children not be destroyed.
+					// if DontDestroyChildren parameter is true, children objects will not be destroyed.
 					GUIAnimSystemFREE.Instance.DontDestroyParticleWhenLoadNewScene(Transform trans, bool DontDestroyChildren);
 				
 				- JavaScript
 
-					// Set DontDestroyChildren to true to make children not be destroyed.
+					// if DontDestroyChildren parameter is true, children objects will not be destroyed.
 					GUIAnimSystemFREE.Instance.DontDestroyParticleWhenLoadNewScene(Transform trans, bool DontDestroyChildren);
 
 	13) Try using above statements to manage Move-In, Idle and Move-Out animations for all UI objects in the scene.
